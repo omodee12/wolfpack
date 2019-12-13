@@ -11,6 +11,7 @@ import { PageComponent } from './favourite/page/page.component';
 import { InputFormatDirective } from './input-format.directive';
 import { ContactComponent } from './contact/contact.component';
 import { SignupFormComponent } from './signup-form/signup-form.component';
+import { GroupComponent } from './group/group.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { SignupFormComponent } from './signup-form/signup-form.component';
     PageComponent,
     InputFormatDirective,
     ContactComponent,
-    SignupFormComponent
+    SignupFormComponent,
+    GroupComponent
   ],
   imports: [
     BrowserModule,
