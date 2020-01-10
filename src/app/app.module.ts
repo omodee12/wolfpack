@@ -12,7 +12,7 @@ import { InputFormatDirective } from './input-format.directive';
 import { ContactComponent } from './contact/contact.component';
 import { SignupFormComponent } from './signup-form/signup-form.component';
 import { GroupComponent } from './group/group.component';
-import { CartComponent } from './cart/cart.component';
+import { PostsComponent } from './posts/posts.component';
 
 
 @NgModule({
@@ -23,7 +23,7 @@ import { CartComponent } from './cart/cart.component';
     ContactComponent,
     SignupFormComponent,
     GroupComponent,
-    CartComponent
+    PostsComponent
   ],
   imports: [
     BrowserModule,
