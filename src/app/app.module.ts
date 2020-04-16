@@ -1,4 +1,4 @@
-import { PostComponent } from './post/post.component';
+import { PostService } from './services/post.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -15,6 +15,7 @@ import { InputFormatDirective } from './input-format.directive';
 import { ContactComponent } from './contact/contact.component';
 import { SignupFormComponent } from './signup-form/signup-form.component';
 import { GroupComponent } from './group/group.component';
+import { PostsComponent } from './posts/posts.component';
 
 
 
@@ -27,7 +28,7 @@ import { GroupComponent } from './group/group.component';
     ContactComponent,
     SignupFormComponent,
     GroupComponent,
-    PostComponent
+    PostsComponent
   
   ],
   imports: [
@@ -41,7 +42,9 @@ import { GroupComponent } from './group/group.component';
     ReactiveFormsModule
     
   ],
-  providers: [],
+  providers: [
+    PostService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
