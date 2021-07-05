@@ -6,9 +6,9 @@ import { CoursesService } from "./courses.service";
     template: `<h2>{{ getTitle() }}</h2>
         {{ courses.title | uppercase }} <br/>
         {{ courses.students }} <br/>
-        {{ courses.rating | number }} <br/>
-        {{ courses.price }} <br/>
-        {{ courses.releaseDate }} <br/>
+        {{ courses.rating | number: '1.2-2' }} <br/>
+        {{ courses.price | currency: 'NGN': true }} <br/>
+        {{ courses.releaseDate | date: 'shortDate'}} <br/>
 
         <img src="{{ imageUrl }}"/>
         <table>
@@ -27,7 +27,7 @@ export class CoursesComponent{
     courses = {
         title: 'book',
         students: '345',
-        rating: '4.2',
+        rating: '4.267',
         price: '100.95',
         releaseDate: new Date(2021, 6,  2)
     };
